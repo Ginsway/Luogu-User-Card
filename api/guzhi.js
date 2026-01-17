@@ -6,7 +6,7 @@ const axios = require("axios");
 async function fetchGuzhi(id, ranking) {
     var page = Math.floor((ranking - 1) / 50) + 1;
 
-    const res = await axios.get(`https://www.luogu.com.cn/ranking?page=${page}&_contentOnly`);
+    const res = await axios.get(`https://www.luogu.com/ranking?page=${page}&_contentOnly`);
 
     if (res.data.code != 200) {
         return "Not found.";

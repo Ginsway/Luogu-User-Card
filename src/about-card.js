@@ -16,7 +16,7 @@ async function fetchAbout(id) {
     //debug 测试请求
     //const res = await axios.get(`https://tc-0glpuj1k4e75e5ec-1300876583.ap-shanghai.service.tcloudbase.com/luogu?id=${id}`);
 
-    const res = await axios.get(`https://www.luogu.com.cn/user/${id}?_contentOnly`)
+    const res = await axios.get(`https://www.luogu.com/user/${id}?_contentOnly`)
 
     const about = {
         name: "NULL",
